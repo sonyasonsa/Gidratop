@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__header {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  min-height: 80px;
+  justify-content: space-around;
+  color: Grey;
+  border-bottom: 1px solid;
+  border-bottom-color: grey;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.logo img {
+  margin-left: 60px;
+}
+
+.main__header a {
+  color: Grey;
+}
+
+.menu__list {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 45px;
+  margin-right: 645px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  align-items: center;
+}
+
+.account {
+  margin-right: 50px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.main__options {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  white-space: nowrap;
+  height: 70px;
+  margin-top: 10px;
+  gap: 45px;
+  padding-bottom: 10px;
+}
+
+.catalog {
+  display: flex;
+  margin-left: 70px;
+  justify-content: flex-start;
+}
+
+.catalog__list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.catalog__list a {
+  font-size: 16px;
+  color: rgba(71, 152, 222, 1);
+}
+
+.search_box {
+  display: flex;
+  justify-content: flex-start;
+  width: 1000px;
+  align-items: center;
+}
+
+form {
+  justify-content: space-between;
+  width: 540px;
+  display: flex;
+  border-radius: 12px;
+  height: 50px;
+  position: relative;
+}
+
+input {
+  border: 2px solid gray;
+  display: flex;
+  height: 50px;
+  position: relative;
+  width: 700px;
+  border-color: gray;
+  padding-left: 40px;
+}
+
+button {
+  justify-content: center;
+  border: 2px solid black;
+  display: flex;
+  width: 100px;
+  border-color: rgba(71, 152, 222, 1);
+  border-radius: 0 6px 6px 0;
+  background-color: rgba(71, 152, 222, 1);
+}
+
+.phone__phonenumber {
+  font-weight: bold;
+  color: gray;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.phone {
+  padding-left: 40px;
+}
+
+.phone__phonequestion {
+  color: rgb(17, 192, 1);
+}
+
+.tools {
+  margin-right: 42px;
+  width: 400px;
+}
+
+.tools__list a {
+  display: flex;
+  flex-direction: column;
+  color: rgba(71, 152, 222, 1);
+}
+
+.tools__list {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.main__slider {
+  display: flex;
+  height: 800px;
+}
+
+.swiper {
+  height: 100%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  border-radius: 0;
+  padding: 3px 15px;
+}
+
+.curtain {
+  position: absolute;
+  left: 1300px;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.623);
+}
+
+.curtain h1 {
+  position: absolute;
+  top: 300px;
+  font-size: 40px;
+  color: rgba(107, 107, 107, 0.685);
+  left: 30px;
+}
+
+.curtain h2 {
+  position: absolute;
+  top: 360px;
+  left: 30px;
+  font-size: 40px;
+  color: rgba(107, 107, 107, 0.685);
+}
+
+.curtain h3 {
+  position: absolute;
+  top: 420px;
+  font-size: 60px;
+  color: rgba(0, 214, 36, 0.685);
+  left: 30px;
+}
+
+.curtain a {
+  position: absolute;
+  top: 520px;
+  left: 30px;
+  width: 150px;
+  height: 45px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-color: rgba(71, 152, 222, 1);
+  border-radius: 8px;
+  background-color: rgba(71, 152, 222, 1);
+}
+
+.curtain p {
+  position: absolute;
+  top: 13px;
+  left: 30px;
+}
