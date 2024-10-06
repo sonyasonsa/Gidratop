@@ -14,6 +14,7 @@ body {
 }
 
 .main {
+  max-width: 1950;
   height: 100%;
   width: 100%;
   display: flex;
@@ -164,9 +165,9 @@ button {
   flex-direction: row;
 }
 
-.swiper-slide img {
+.main-slide img {
   width: 100%;
-  height: 100%;
+  height: 750px;
 }
 
 .main__slider {
@@ -174,11 +175,11 @@ button {
   height: 800px;
 }
 
-.swiper {
+.main-promo {
   height: 100%;
 }
 
-.swiper-pagination .swiper-pagination-bullet {
+.main-promo .swiper-pagination .swiper-pagination-bullet {
   border-radius: 0;
   padding: 3px 15px;
 }
@@ -234,4 +235,72 @@ button {
   position: absolute;
   top: 13px;
   left: 30px;
+}
+
+.main__stock-block {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.main__stock-block p {
+  color: rgba(21, 36, 79, 1);
+  font-size: 35px;
+  font-weight: bold;
+  padding-left: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.main__stock-block h1 {
+  position: absolute;
+  z-index: 1;
+  color: rgba(241, 242, 246, 1);
+  font-size: 110px;
+  left: 180px;
+}
+
+.main__stock-block a {
+  color: rgba(71, 152, 222, 1);
+  font-size: 16px;
+  font-weight: bold;
+  padding-right: 100px;
+}
+
+.sale-banner {
+  display: flex;
+  height: 420px;
+  margin-bottom: 15px;
+  max-width: 1900px;
+}
+
+.sale-slide img {
+  width: 100%;
+  height: 350px;
+}
+
+.sale-banner .swiper-pagination .swiper-pagination-bullet {
+  border-radius: 0;
+  padding: 3px 10px;
+}
+
+.sale-banner .sale-button-prev {
+  top: initial;
+  bottom: 0px;
+  left: 800px;
+}
+
+.sale-banner .sale-button-next {
+  top: initial;
+  bottom: 0px;
+  right: 800px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 22px !important;
+  font-weight: bold;
 }
