@@ -16,7 +16,6 @@
 {
   var swiper3 = new Swiper(".help-banner", {
     slidesPerView: 6,
-
     loop: true,
     spaceBetween: 30,
     pagination: {

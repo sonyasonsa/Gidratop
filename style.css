@@ -11,6 +11,8 @@ html {
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
+  height: 100%;
+  width: 100%;
 }
 
 .main {
@@ -309,6 +311,8 @@ button {
 }
 
 .catalog__header {
+  height: 100%;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -322,13 +326,13 @@ button {
   color: Grey;
 }
 .section a {
+  flex-grow: 1;
   border: 1px solid rgba(241, 242, 246, 1);
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   min-height: 80px;
   display: flex;
   color: Grey;
-  min-width: 566px;
   justify-content: center;
   margin-bottom: 1px;
 }
@@ -521,9 +525,9 @@ button {
   height: 600px;
   background-size: cover;
   background-image: linear-gradient(
-      rgb(255, 255, 255) 10%,
-      rgba(255, 255, 255, 0.623) 50%,
-      rgb(255, 255, 255) 90%
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0.479),
+      rgb(255, 255, 255)
     ),
     url(/images/ravak_chrome-1.jpg);
 }
@@ -582,9 +586,9 @@ button {
 }
 
 .help-banner {
-  margin-top: 100px;
+  margin-top: 60px;
   width: 100%;
-  height: 300px;
+  height: 350px;
 }
 
 .swiper-wrapper {
@@ -600,6 +604,13 @@ button {
   align-items: center;
   width: 100%;
   height: 100%;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex !important;
 }
 
 .help-slide img {
@@ -644,8 +655,28 @@ button {
 
 .help-slide p {
   position: absolute;
-  text-align: center;
-  left: 25%;
-  color: rgb(255, 0, 0);
+  bottom: 25%;
+  color: rgb(255, 255, 255);
   font-weight: bold;
+  z-index: 1;
+}
+
+.categories {
+  padding-top: 100px;
+  width: 100%;
+  height: 505px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0.473)
+    ),
+    linear-gradient(
+      to bottom,
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0.473),
+      rgb(255, 255, 255)
+    ),
+    url(/images/b-10.jpg.pagespeed.ce1.png);
 }
